@@ -18,6 +18,20 @@ function twoNumberSum(array, targetSum) {
   return []
 }
 
+// Alternate approach if the array is sorted
+function twoNumberSumIfArrayIsSorted(array, targetSum) {
+  let i = 0, j = array.length - 1
+  while (i < j) {
+    const sum = array[i] + array[j]
+    if (sum === targetSum) {
+      return [i, j]
+    }
+    sum < targetSum ? i++ : j--
+  }
+  return []
+}
+
+
 const array = [1, 2, -3, 9, -13, 10, 4, 8, -8, 5]
 const targetSum = 7
 const result = twoNumberSum(array, targetSum)
