@@ -27,3 +27,9 @@ if (result.length) {
 } else {
   console.log(`The required sum of ${targetSum} can not be obtained`)
 }
+
+/*
+  Complexity analysis:
+    Time complexity : O(N)
+    Space complexity : O(N)
+*/
